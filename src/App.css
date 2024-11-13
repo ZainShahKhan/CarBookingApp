@@ -1,0 +1,239 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; /* Set the main app container width to 90% of the screen */
+}
+
+.App h1{
+  width: 80%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 1.4rem;
+  align-self: center;
+}
+
+/* Center the Calendar and BookingForm vertically */
+.calendar-container,
+.booking-form-container,
+.booking-list {
+  margin: 0px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Set width to 90% */
+  max-width: 1000px; /* Optional: Set a maximum width for better control */
+}
+
+
+/* Calendar.css */
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 
+    0px 100px 80px rgba(0, 0, 0, 0.07),
+    0px 41.7776px 33.4221px rgba(0, 0, 0, 0.05),
+    0px 22.3363px 17.869px rgba(0, 0, 0, 0.041),
+    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
+    0px 6.6501px 5.32px rgba(0, 0, 0, 0.028),
+    0px 2.767px 2.2138px rgba(0, 0, 0, 0.02);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Each day styling */
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.day:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.day:active {
+  background-color: #d0d0d0;
+}
+
+/* BookingList.css */
+
+/* Booking List */
+.booking-list {
+  margin-top: 30px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px; /* Optional: Limit the width of the booking list */
+}
+
+
+.booking-list h3 {
+  width: 80%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 1.4rem;
+  align-self: center;
+}
+
+.booking-list ul {
+  list-style: none;  /* Remove the default bullet points */
+  padding: 0;  /* Remove default padding */
+  width: 100%;  /* Make the list take up full width of its container */
+}
+
+.booking-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cbaff0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  width: 80%; /* Set width to 80% of the parent container */
+  max-width: 800px; /* Optional: to ensure it doesn't stretch too much on larger screens */
+  margin: 0 auto; /* Center the booking card horizontally */
+}
+
+.booking-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.booking-details span {
+  color: #000000;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.booking-delete {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-delete:hover {
+  background-color: #c0392b;
+}
+
+/* BookingForm.css */
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 15px;
+  width: 500px;
+  height: 500px;
+  overflow-y: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  margin: 30px auto; /* Centers the form horizontally */
+}
+
+
+.form-group {
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  align-self: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+  width: 80%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  align-self: center;
+}
+
+.booking-form h2 {
+  width: 80%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 1.4rem;
+  align-self: center;
+}
+
+.booking-form button {
+  align-self: center;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 1rem;
+}
+
+.radio-group label {
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
