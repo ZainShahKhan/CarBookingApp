@@ -39,10 +39,10 @@ const BookingForm = ({ selectedDate, addBooking }) => {
         <label>Car:</label>
         <div className="radio-group">
           <label>
-            <input type="radio" value="Corolla" checked={car === 'Corolla'} onChange={(e) => setCar(e.target.value)} /> Corolla
+            <input type="radio" value="Corolla" checked={car === 'Corolla'} onChange={(e) => setCar(e.target.value)} required /> Corolla
           </label>
           <label>
-            <input type="radio" value="Vitz" checked={car === 'Vitz'} onChange={(e) => setCar(e.target.value)} /> Vitz
+            <input type="radio" value="Vitz" checked={car === 'Vitz'} onChange={(e) => setCar(e.target.value)} required /> Vitz
           </label>
         </div>
       </div>
