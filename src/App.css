@@ -103,8 +103,14 @@
 
 .booking-list ul {
   list-style: none;  /* Remove the default bullet points */
-  padding: 0;  /* Remove default padding */
-  width: 100%;  /* Make the list take up full width of its container */
+  padding-left: 0px;  /* Remove default padding */
+  width: 100%;
+}
+
+.booking-list li {
+  margin: 20px;
+  width: 60%;
+  justify-self: center;
 }
 
 .booking-card {
@@ -157,7 +163,7 @@
   padding: 20px;
   gap: 15px;
   width: 500px;
-  height: 500px;
+  height: 616px;
   overflow-y: auto;
   background: #FFFFFF;
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
